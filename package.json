@@ -10,7 +10,7 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "test": "mocha src/**.test.js",
+        "test": "mocha src/**.spec.js",
         "coverage": "nyc npm run test",
         "coverage:report": "nyc report --reporter=html"
     },
