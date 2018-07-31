@@ -1,5 +1,6 @@
 const { AlarmClock } = require('./alarm-clock');
 const assert = require('assert');
+const sinon = require('sinon');
 
 describe('General', () => {
     it('should be defined', () => {
@@ -31,7 +32,7 @@ describe('General', () => {
 
         it('should store hour', () => {
             const c = new AlarmClock();
-            c.setAlarm(4);
+            c.setAlarm({ hour: 4 });
             assert(c.alarmHour === 4);
         });
     });
@@ -54,18 +55,17 @@ describe('General', () => {
         });
 
         it('should calls callback when time is on', (done) => {
-            // Mockowanie czasu
-            const cacheGetHours = global.Date.prototype.getHours;
-            global.Date.prototype.getHours = () => 8;
+            sinon.stub(Date.prototype, 'getHours').callsFake(() => 8);
 
             const c = new AlarmClock(() => {
                 console.log('ciasteczko');
                 assert(true);
                 // Teardown
-                global.Date.prototype.getHours = cacheGetHours;
+                assert(Date.prototype.getHours.called);
+                Date.prototype.getHours.restore();
                 done();
             });
-            c.setAlarm(8);
+            c.setAlarm({ hour: 8 });
             c.start();
         });
     });
