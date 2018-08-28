@@ -15,8 +15,6 @@ class AlarmClock {
             const currentHours = new Date().getHours();
             const itsTime = (currentHours === this.alarmHour);
 
-            console.log(`it's time? ${itsTime}`);
-
             if (itsTime) {
                 if (typeof this.callback === 'function') {
                     this.callback();
