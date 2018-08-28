@@ -6,7 +6,7 @@ class AlarmClock {
         this.callback = callback;
     }
 
-    setAlarm({ hour }) {
+    setAlarm2({ hour }) {
         this.alarmHour = hour;
     }
 
