@@ -1,5 +1,5 @@
-const { AlarmClock } = require('./alarm-clock');
-// const sinon = require('sinon');
+const { AlarmClock } = require('../src/alarm-clock');
+const sinon = require('sinon');
 
 let root = null;
 
@@ -61,8 +61,8 @@ describe('General', () => {
             c.start();
         });
 
-        xit('should calls callback when time is on', (done) => {
-            // sinon.stub(Date.prototype, 'getHours').callsFake(() => 8);
+        it('should calls callback when time is on', (done) => {
+            sinon.stub(Date.prototype, 'getHours').callsFake(() => 8);
 
             const c = new AlarmClock(() => {
                 console.log('ciasteczko');
