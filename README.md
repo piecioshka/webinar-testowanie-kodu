@@ -1,18 +1,17 @@
 # webinar-testowanie-kodu
 
+[![dependencies](https://david-dm.org/piecioshka/webinar-testowanie-kodu.svg)](https://github.com/piecioshka/webinar-testowanie-kodu)
 [![travis](https://img.shields.io/travis/piecioshka/webinar-testowanie-kodu.svg)](https://travis-ci.org/piecioshka/webinar-testowanie-kodu)
 
-## Unit tests
+:movie_camera: Webinar: Testowanie kodu (testy jednostkowe)
 
-Use Mocha to setup unit tests:
+## Unit tests
 
 ```bash
 npm test
 ```
 
 ## Code coverage
-
-Check code coverage with [Istanbul](https://github.com/gotwarlost/istanbul):
 
 ```bash
 npm run coverage

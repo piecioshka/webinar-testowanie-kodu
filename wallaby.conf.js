@@ -5,7 +5,7 @@ module.exports = function (wallaby) {
         ],
 
         tests: [
-            'spec/**/*.spec.js'
+            'test/**/*.js'
         ],
 
         compilers: {

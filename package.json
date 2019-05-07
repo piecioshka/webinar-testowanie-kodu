@@ -10,7 +10,7 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "test": "jasmine",
+        "test": "jasmine test/**/*.js",
         "test:karma": "karma start",
         "coverage": "nyc npm run test",
         "coverage:report": "nyc report --reporter=html"
