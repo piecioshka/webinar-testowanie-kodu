@@ -1,6 +1,6 @@
 # webinar-testowanie-kodu
 
-[![travis](https://img.shields.io/travis/piecioshka/webinar-testowanie-kodu.svg)](https://travis-ci.org/piecioshka/webinar-testowanie-kodu)
+[![travis-ci](https://api.travis-ci.com/piecioshka/webinar-testowanie-kodu.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/webinar-testowanie-kodu)
 
 :movie_camera: Webinar: Testowanie kodu (testy jednostkowe)
 
