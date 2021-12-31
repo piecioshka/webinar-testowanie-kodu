@@ -1,6 +1,5 @@
 # webinar-testowanie-kodu
 
-[![dependencies](https://david-dm.org/piecioshka/webinar-testowanie-kodu.svg)](https://github.com/piecioshka/webinar-testowanie-kodu)
 [![travis](https://img.shields.io/travis/piecioshka/webinar-testowanie-kodu.svg)](https://travis-ci.org/piecioshka/webinar-testowanie-kodu)
 
 :movie_camera: Webinar: Testowanie kodu (testy jednostkowe)
